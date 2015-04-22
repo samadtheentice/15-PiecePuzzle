@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>15 puzzle</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="application/javascript" src="js/application.js"></script>    
+    
+</head>
+<body>
+<div class="container">
+	<div class="col1">
+		<div class="gamearea">
+			<div class="boardarea">
+			<div class="divrow1">
+				<div class="divcol1" id="b0" onclick="getDivCoordinate(this.id)"></div>
+				<div class="divcol2" id="b1" onclick="getDivCoordinate(this.id)"></div>	
+				<div class="divcol3" id="b2" onclick="getDivCoordinate(this.id)" ></div>	
+				<div class="divcol4" id="b3" onclick="getDivCoordinate(this.id)" ></div>												
+			</div>
+			<div class="divrow2">
+				<div class="divcol1" id="b4" onclick="getDivCoordinate(this.id)"></div>
+				<div class="divcol2" id="b5" onclick="getDivCoordinate(this.id)"></div>	
+				<div class="divcol3" id="b6" onclick="getDivCoordinate(this.id)"></div>	
+				<div class="divcol4" id="b7" onclick="getDivCoordinate(this.id)"></div>
+			</div>
+			<div class="divrow3">
+				<div class="divcol1" id="b8" onclick="getDivCoordinate(this.id)"></div>
+				<div class="divcol2" id="b9" onclick="getDivCoordinate(this.id)"></div>	
+				<div class="divcol3" id="b10" onclick="getDivCoordinate(this.id)"></div>	
+				<div class="divcol4" id="b11" onclick="getDivCoordinate(this.id)"></div>	
+			</div>
+			<div class="divrow4">
+				<div class="divcol1" id="b12" onclick="getDivCoordinate(this.id)"></div>
+				<div class="divcol2" id="b13" onclick="getDivCoordinate(this.id)"></div>	
+				<div class="divcol3" id="b14" onclick="getDivCoordinate(this.id)"></div>	
+				<div class="divcol4" id="b15" onclick="getDivCoordinate(this.id)"></div>	
+			</div>
+			</div>
+			<div id='gameMessage'>
+			</div>
+			<div id="showtimer"><time>00:00:00</time></div>				
+		</div>
+		<div class="gamecontrol">
+			<button id="newgame" class="btncontrol">New</button>
+			<button id="undo" class="btncontrol">Undo</button>
+		</div>
+	</div>
+	<div class="col2">
+		<div >
+			Movement traking
+			<div id="trackmovediv"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
